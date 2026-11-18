@@ -1,0 +1,8 @@
+spring:
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5433/webhook_relay}
+    driver-class-name: org.postgresql.Driver
+    username: ${DB_USERNAME:relay}
+    password: ${DB_PASSWORD:relay_secret}
+  flyway:
+    enabled: true
